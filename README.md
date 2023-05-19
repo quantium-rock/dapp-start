@@ -1,3 +1,3 @@
 # web3-dapp
 
-Server and Clinet starting point for building dApps.
+Client and Server starting template for secure and scalables dApps.
