@@ -1,6 +1,6 @@
-# web3-dapp
+# dapp-start
 
-Client and Server starting template for secure and scalable dApps.
+Client and Server starting template for secure and scalable Web3 dApps.
 
 For collaborations contact:
 - github: https://github.com/quantium-rock
