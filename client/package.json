@@ -1,0 +1,131 @@
+{
+  "name": "portal-client",
+  "version": "1.0.0",
+  "private": true,
+  "_moduleAliases": {
+    "@": "./src"
+  },
+  "scripts": {
+    "dev": "yarn && vue-cli-service serve",
+    "start": "yarn && vue-cli-service serve",
+    "serve": "yarn && vue-cli-service serve",
+    "build": "yarn && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "jest",
+    "dist": "./dist/index.html",
+    "deploy": "yarn build && git add dist && git commit -m 'chore: deploy' && git push dist -b production"
+  },
+  "license": "ISC",
+  "authors": "Alex Colls, Joan Cifo (BSM Executive), Carlos Falguera",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamesforaliving/portal-client"
+  },
+  "bugs": {
+    "url": "https://github.com/gamesforaliving/portal-client/issues"
+  },
+  "homepage": "https://github.com/gamesforaliving/portal-client#readme",
+  "keywords": [
+    "G4AL Client",
+    "G4AL Portal",
+    "G4AL Marketplace",
+    "G4AL DAO",
+    "G4AL Social"
+  ],
+  "dependencies": {
+    "@headlessui/vue": "^1.7.13",
+    "@heroicons/vue": "^2.0.18",
+    "@kyvg/vue3-notification": "^2.9.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/compiler-sfc": "^3.3.4",
+    "core-js": "^3.26.1",
+    "dotenv": "^16.0.3",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "pinia": "^2.0.35",
+    "pinia-plugin-persistedstate": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "register-service-worker": "^1.7.2",
+    "socket.io-client": "^4.6.1",
+    "vite": "^4.3.6",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/dotenv-webpack": "^7.0.3",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^18.15.11",
+    "@types/velocity-animate": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-e2e-cypress": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-pwa": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-typescript": "^9.1.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "autoprefixer": "^10.4.13",
+    "babel-jest": "^27.0.6",
+    "cypress": "^9.7.0",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^8.0.3",
+    "jest": "^27.0.5",
+    "postcss": "^8.4.20",
+    "sass": "^1.32.7",
+    "sass-loader": "^12.0.0",
+    "tailwindcss": "^3.3.2",
+    "ts-jest": "^27.0.4",
+    "typescript": "~4.5.5",
+    "vite-svg-loader": "^4.0.0",
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "webpack-dev-server": "^4.13.3"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false,
+    "crypto": false
+  },
+  "node": {
+    "fs": "empty",
+    "net": "empty",
+    "tls": "empty"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended",
+      "@vue/typescript/recommended",
+      "plugin:prettier/recommended",
+      "eslint-config-prettier"
+    ],
+    "plugins": [
+      "eslint-plugin-prettier"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "target": "node",
+  "engines": {
+    "node": "18"
+  }
+}
